@@ -1,7 +1,120 @@
-html{
+/*
+* COLORS: 
+*	Main red - F50000
+*	Light red - F54C4C
+*	Dark red - C40000
+*	Light grey - EEEEEE
+*	Medium Grey - BABABA
+*	Dark grey - 7B8585
+*/
 
+html{
+	width: 100%;
+	height: 100%;
 }
 
 body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	font-family: 'helvetica', sans-serif;
+}
+
+/*
+---- HEADER ----
+*/
+header{
+	width: 100%;
+	margin: 0;
+	
+	background-color: #F50000;
+}
+
+header h1{
+	margin: 0 0 30px 0;
+	padding: 35px 0 0 40px;
+
+	color: #FFFFFF;
+	font-family: arial, sans-serif;
+	text-transform: uppercase;
+}
+
+header #nav-bar{
+	width: 100%;
+}
+
+header nav{
+	width: 90%;
+	height: auto;
+}
+
+header nav ul{
+	margin: 0;
+    list-style:none;
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor:pointer;
+    background-color:#EEEEEE;
+    color:#7B8585;
+    
+    transition:0.3s;
+}
+
+header nav ul li:hover{
+	color: #FFFFFF;
+    background-color:#BABABA;
+}
+
+header nav ul li.focused{
+    color: #FFFFFF;
+    background-color:#7B8585;
+}
+
+header nav p{
+   	float: right;
+    font-size:12px;
+}
+
+/*
+---- MAIN ----
+*/
+main{
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+main #content{
+	/*margin: 30 0;*/
+}
+
+main .commentBox{
+	
+}
+
+/*
+---- FOOTER ----
+*/
+footer{
+	width: 100%;
+	margin: 0;
+	padding: 30px 0 20px 0;
+	background-color: #F50000;
+}
+
+footer .copyright{
+	width: 70%;
+	color: #FFFFFF;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer .copyright a{
+	color: #FFFFFF;
+	font-style: italic;
 }
